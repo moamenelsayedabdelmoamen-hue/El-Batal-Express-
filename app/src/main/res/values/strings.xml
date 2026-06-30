@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">El Batal Express</string>
+    <string name="login_title">El Batal Express Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="new_orders_label">New Orders</string>
+    <string name="in_progress_label">In Progress</string>
+    <string name="completed_label">Completed</string>
+    <string name="create_order_button">Create New Order</string>
+    <string name="view_orders_button">View Orders</string>
+    <string name="restaurant_name_hint">Restaurant Name</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="register_button">Register</string>
+    <string name="register_link">Don\'t have an account? Register</string>
+    <string name="registration_success_message">Your data has been received and is currently being processed.</string>
+    <string name="subscription_title">اختر الباقة المناسبة</string>
+    <string name="plan_captains">%d كابتن</string>
+    <string name="plan_price">%d جنيه</string>
+    <string name="subscribe_button">اشتراك</string>
+    <string name="most_popular">الأكثر اختياراً</string>
+    <string name="plan_subtitle">الباقة الأساسية</string>
+    <string name="feature_fast_delivery">توصيل سريع</string>
+    <string name="feature_tech_support">دعم فني</string>
+    <string name="subscribe_now">اشترك الآن</string>
+</resources>

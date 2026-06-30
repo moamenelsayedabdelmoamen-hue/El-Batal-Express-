@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">البطل إكسبريس</string>
+    <string name="login_title">تسجيل دخول البطل إكسبريس</string>
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="login_button">تسجيل دخول</string>
+    <string name="dashboard_title">لوحة التحكم</string>
+    <string name="new_orders_label">طلبات جديدة</string>
+    <string name="in_progress_label">قيد التنفيذ</string>
+    <string name="completed_label">مكتملة</string>
+    <string name="create_order_button">إنشاء طلب جديد</string>
+    <string name="view_orders_button">عرض الطلبات</string>
+    <string name="restaurant_name_hint">اسم المطعم</string>
+    <string name="phone_hint">رقم الهاتف</string>
+    <string name="register_button">تسجيل</string>
+    <string name="register_link">ليس لديك حساب؟ سجل الآن</string>
+    <string name="registration_success_message">تم استلام بياناتك جاري المعالجة</string>
+    <string name="subscription_title">اختر الباقة المناسبة</string>
+    <string name="plan_captains">%d كابتن</string>
+    <string name="plan_price">%d جنيه</string>
+    <string name="subscribe_button">اشتراك</string>
+    <string name="most_popular">الأكثر اختياراً</string>
+    <string name="plan_subtitle">الباقة الأساسية</string>
+    <string name="feature_fast_delivery">توصيل سريع</string>
+    <string name="feature_tech_support">دعم فني</string>
+    <string name="subscribe_now">اشترك الآن</string>
+</resources>
