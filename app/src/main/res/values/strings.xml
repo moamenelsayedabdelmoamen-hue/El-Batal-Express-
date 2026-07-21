@@ -24,4 +24,24 @@
     <string name="feature_fast_delivery">توصيل سريع</string>
     <string name="feature_tech_support">دعم فني</string>
     <string name="subscribe_now">اشترك الآن</string>
+    <string name="restaurant_home_title">مرحباً بك في لوحة المطعم</string>
+    <string name="restaurant_home_subtitle">ادارة الطلبات والاشتراك بسهولة من مكان واحد</string>
+    <string name="quick_actions">إجراءات سريعة</string>
+    <string name="current_plan_label">الباقة الحالية</string>
+    <string name="orders_overview_title">أحدث الطلبات</string>
+    <string name="order_status_delivered">تم التسليم</string>
+    <string name="order_status_processing">قيد التوصيل</string>
+    <string name="menu_orders">سجل الطلبات</string>
+    <string name="menu_orders_subtitle">عرض جميع الطلبات السابقة</string>
+    <string name="menu_subscription">الباقة الحالية</string>
+    <string name="menu_subscription_subtitle">تفاصيل خطة الاشتراك</string>
+    <string name="logout_button">تسجيل خروج</string>
+    <string name="logout_confirm_title">تأكيد تسجيل الخروج</string>
+    <string name="logout_confirm_message">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="logout_confirm_yes">نعم</string>
+    <string name="logout_confirm_no">لا</string>
+    <string name="edit_restaurant_button">تعديل بيانات المطعم</string>
+    <string name="edit_restaurant_title">تعديل بيانات المطعم</string>
+    <string name="edit_restaurant_message">يمكنك تعديل صورة المطعم ورقم الهاتف والعنوان من هنا.</string>
+    <string name="orders_title">جميع الطلبات</string>
 </resources>

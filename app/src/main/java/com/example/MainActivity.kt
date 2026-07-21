@@ -31,6 +31,12 @@ object RegistrationSuccessRoute
 @Serializable
 object SubscriptionRoute
 
+@Serializable
+object RestaurantDetailsRoute
+
+@Serializable
+object OrdersRoute
+
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -46,12 +52,12 @@ class MainActivity : ComponentActivity() {
           ) {
             composable<LoginRoute> {
               LoginScreen(
-                onLoginSuccess = { navController.navigate(SubscriptionRoute) },
+                onLoginSuccess = { navController.navigate(HomeRoute) },
                 onRegisterClick = { navController.navigate(RegisterRoute) }
               )
             }
             composable<RegisterRoute> {
-              RegisterScreen(onRegisterSuccess = { navController.navigate(SubscriptionRoute) })
+              RegisterScreen(onRegisterSuccess = { navController.navigate(HomeRoute) })
             }
             composable<SubscriptionRoute> {
                 SubscriptionPlansScreen()
@@ -60,7 +66,21 @@ class MainActivity : ComponentActivity() {
               RegistrationSuccessScreen()
             }
             composable<HomeRoute> {
-              HomeScreen()
+              HomeScreen(
+                onEditRestaurant = { navController.navigate(RestaurantDetailsRoute) },
+                onViewOrders = { navController.navigate(OrdersRoute) },
+                onLogout = {
+                  navController.navigate(LoginRoute) {
+                    popUpTo(navController.graph.startDestinationId) { inclusive = true }
+                  }
+                }
+              )
+            }
+            composable<RestaurantDetailsRoute> {
+              RestaurantDetailsScreen(onBack = { navController.popBackStack() })
+            }
+            composable<OrdersRoute> {
+              OrdersScreen(onBack = { navController.popBackStack() })
             }
           }
         }
