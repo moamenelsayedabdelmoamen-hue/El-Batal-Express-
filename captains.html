@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الكباتن - لوحة تحكم البطل إكسبريس</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <button class="menu-toggle" id="sidebarToggle">☰</button>
+      <h1>الكباتن</h1>
+      <div class="topbar-actions">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>القائمة</h2>
+        <button class="close-sidebar" id="sidebarClose">×</button>
+      </div>
+      <nav>
+        <a href="restaurant.html">بيانات المطعم</a>
+        <a href="orders.html">الطلبات اليوم</a>
+        <a href="previous-orders.html">الطلبات السابقة</a>
+        <a href="captains.html">الكباتن</a>
+        <a href="index.html#package-card">الباقة الحالية</a>
+        <a href="#" class="logout">تسجيل الخروج</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="section-header">
+        <h2>قائمة الكباتن</h2>
+        <p>عرض تفاصيل الكباتن النشطين حالياً.</p>
+      </section>
+
+      <section class="captains-list">
+        <article class="captain-card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="الكابتن" />
+          <div>
+            <h3>خالد حسن</h3>
+            <p>الهاتف: 01198765432</p>
+          </div>
+        </article>
+        <article class="captain-card">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="الكابتن" />
+          <div>
+            <h3>محمد صلاح</h3>
+            <p>الهاتف: 01101234567</p>
+          </div>
+        </article>
+        <article class="captain-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="الكابتن" />
+          <div>
+            <h3>أحمد مصطفى</h3>
+            <p>الهاتف: 01099887766</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

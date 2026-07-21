@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>طلبات اليوم - لوحة تحكم البطل إكسبريس</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <button class="menu-toggle" id="sidebarToggle">☰</button>
+      <h1>طلبات اليوم</h1>
+      <div class="topbar-actions">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>القائمة</h2>
+        <button class="close-sidebar" id="sidebarClose">×</button>
+      </div>
+      <nav>
+        <a href="restaurant.html">بيانات المطعم</a>
+        <a href="orders.html">الطلبات اليوم</a>
+        <a href="previous-orders.html">الطلبات السابقة</a>
+        <a href="captains.html">الكباتن</a>
+        <a href="index.html#package-card">الباقة الحالية</a>
+        <a href="#" class="logout">تسجيل الخروج</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="section-header">
+        <h2>قسم الطلبات</h2>
+        <p>يمكنك إدارة الطلبات الجارية والمكتملة والملغاة هنا.</p>
+      </section>
+
+      <section class="orders-section">
+        <div class="order-group">
+          <h3>الطلبات الجارية</h3>
+          <div class="order-card">
+            <div class="order-info">
+              <p><strong>العميل:</strong> أحمد محمد</p>
+              <p><strong>الهاتف:</strong> 01012345678</p>
+              <p><strong>العنوان:</strong> شارع النصر، القاهرة</p>
+              <p><strong>المندوب:</strong> خالد حسن</p>
+              <p><strong>هاتف المندوب:</strong> 01198765432</p>
+            </div>
+            <div class="order-extra">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="صورة المندوب" />
+              <button class="button">تعديل الطلب</button>
+            </div>
+          </div>
+          <div class="order-card">
+            <div class="order-info">
+              <p><strong>العميل:</strong> سارة علي</p>
+              <p><strong>الهاتف:</strong> 01234567890</p>
+              <p><strong>العنوان:</strong> المعادي، القاهرة</p>
+              <p><strong>المندوب:</strong> محمد صلاح</p>
+              <p><strong>هاتف المندوب:</strong> 01101234567</p>
+            </div>
+            <div class="order-extra">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="صورة المندوب" />
+              <button class="button">تعديل الطلب</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-group">
+          <h3>الطلبات المكتملة</h3>
+          <div class="order-card completed">
+            <div class="order-info">
+              <p><strong>العميل:</strong> مريم سعيد</p>
+              <p><strong>الهاتف:</strong> 01055544332</p>
+              <p><strong>العنوان:</strong> المهندسين، الجيزة</p>
+              <p><strong>المندوب:</strong> أيمن شريف</p>
+              <p><strong>هاتف المندوب:</strong> 01122334455</p>
+            </div>
+            <div class="order-extra">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="صورة المندوب" />
+            </div>
+          </div>
+        </div>
+
+        <div class="order-group">
+          <h3>الطلبات الملغاة</h3>
+          <div class="order-card canceled">
+            <div class="order-info">
+              <p><strong>العميل:</strong> خالد محمود</p>
+              <p><strong>الهاتف:</strong> 01299887766</p>
+              <p><strong>العنوان:</strong> التجمع الخامس، القاهرة</p>
+              <p><strong>المندوب:</strong> نادر يوسف</p>
+              <p><strong>هاتف المندوب:</strong> 01155667788</p>
+            </div>
+            <div class="order-extra">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="صورة المندوب" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

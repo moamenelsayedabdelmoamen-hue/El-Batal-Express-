@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة تحكم البطل إكسبريس</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <button class="menu-toggle" id="sidebarToggle">☰</button>
+      <h1>لوحة تحكم البطل إكسبريس</h1>
+      <div class="topbar-actions">
+        <a href="restaurant.html" class="nav-link">بيانات المطعم</a>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>القائمة</h2>
+        <button class="close-sidebar" id="sidebarClose">×</button>
+      </div>
+      <nav>
+        <a href="restaurant.html">بيانات المطعم</a>
+        <a href="orders.html">الطلبات اليوم</a>
+        <a href="previous-orders.html">الطلبات السابقة</a>
+        <a href="captains.html">الكباتن</a>
+        <a href="#package-card">الباقة الحالية</a>
+        <a href="#" class="logout">تسجيل الخروج</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="hero-card">
+        <div>
+          <h2>مرحباً بك في لوحة التحكم</h2>
+          <p>هنا يمكنك متابعة الطلبات والكباتن وبيانات المطعم بسهولة.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="توصيل طلبات" />
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="metric-card blue-card">
+          <h3>الطلبات اليوم</h3>
+          <p class="metric">24</p>
+          <a href="orders.html" class="button">عرض الطلبات</a>
+        </article>
+        <article class="metric-card white-card">
+          <h3>الكباتن</h3>
+          <p class="metric">12</p>
+          <a href="captains.html" class="button button-outline">عرض الكباتن</a>
+        </article>
+        <article class="metric-card white-card">
+          <h3>الطلبات السابقة</h3>
+          <p class="metric">130</p>
+          <a href="previous-orders.html" class="button button-outline">اختيار تاريخ</a>
+        </article>
+      </section>
+
+      <section class="package-card" id="package-card">
+        <div>
+          <h2>الباقة الحالية</h2>
+          <p>الباقة الذهبية</p>
+          <span>تاريخ الانتهاء: 30-09-2026</span>
+        </div>
+        <div class="package-status">نشط</div>
+      </section>
+
+      <section class="quick-links">
+        <h2>الوصول السريع</h2>
+        <div class="links-grid">
+          <a href="orders.html">الطلبات الجارية</a>
+          <a href="orders.html">الطلبات المكتملة</a>
+          <a href="orders.html">الطلبات الملغية</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

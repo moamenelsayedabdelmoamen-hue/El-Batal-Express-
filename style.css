@@ -1,0 +1,427 @@
+:root {
+  color-scheme: dark;
+  --bg: #f4f8ff;
+  --surface: #ffffff;
+  --surface-alt: #eaf1fb;
+  --text: #102a43;
+  --muted: #4f6f8f;
+  --primary: #1e60ff;
+  --primary-soft: #e5edff;
+  --danger: #d64545;
+  --success: #1f8a70;
+  --border: #d9e4f5;
+  --shadow: 0 18px 40px rgba(15, 40, 80, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100%;
+}
+
+body {
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.page-shell {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nav-link {
+  padding: 0.6rem 1rem;
+  background: var(--primary-soft);
+  border-radius: 999px;
+  color: var(--primary);
+}
+
+.menu-toggle,
+.close-sidebar,
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  background: var(--primary);
+  color: #fff;
+}
+
+.menu-toggle,
+.close-sidebar {
+  background: var(--primary);
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+.close-sidebar {
+  border-radius: 12px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 100%;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  border-left: 1px solid var(--border);
+  padding: 1rem;
+  transition: right 0.25s ease;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
+.sidebar nav a.logout {
+  color: var(--danger);
+}
+
+.content {
+  padding: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-card,
+.metric-card,
+.package-card,
+.restaurant-card,
+.order-card,
+.captain-card,
+.date-picker-card,
+.quick-links {
+  box-shadow: var(--shadow);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.5rem;
+  padding: 1.75rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-card img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  height: 220px;
+}
+
+.hero-card h2 {
+  margin-top: 0;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  margin-bottom: 1.5rem;
+}
+
+.metric-card {
+  padding: 1.5rem;
+}
+
+.metric-card.blue-card {
+  background: var(--primary);
+  color: #fff;
+}
+
+.metric-card.white-card {
+  background: var(--surface);
+}
+
+.metric-card h3,
+.package-card h2,
+.section-header h2 {
+  margin: 0 0 0.75rem;
+}
+
+.metric {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+}
+
+.button,
+.button-outline {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.button:hover,
+.button-outline:hover {
+  transform: translateY(-1px);
+}
+
+.button-outline {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.package-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.package-status {
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  background: #d6f2e6;
+  color: var(--success);
+  font-weight: 700;
+}
+
+.quick-links {
+  padding: 1.5rem;
+}
+
+.links-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+}
+
+.links-grid a {
+  text-align: center;
+  padding: 1rem;
+  background: var(--surface-alt);
+  border-radius: 18px;
+  color: var(--text);
+}
+
+.section-header {
+  margin-bottom: 1rem;
+}
+
+.orders-section {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.order-group {
+  padding: 1.25rem;
+}
+
+.order-group h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.order-card {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  background: var(--surface-alt);
+}
+
+.order-card.completed {
+  border-left: 6px solid var(--success);
+}
+
+.order-card.canceled {
+  border-left: 6px solid var(--danger);
+}
+
+.order-info p {
+  margin: 0.45rem 0;
+}
+
+.order-extra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-extra img,
+.captain-card img,
+.restaurant-card img {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.order-extra img {
+  max-height: 160px;
+}
+
+.captains-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.captain-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.captain-card div h3 {
+  margin: 0 0 0.5rem;
+}
+
+.restaurant-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.restaurant-details {
+  display: grid;
+  gap: 1rem;
+}
+
+.field-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.field-group label {
+  font-weight: 700;
+}
+
+.field-group input,
+.field-group textarea,
+.date-picker-card input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--text);
+}
+
+.date-picker-card {
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.empty-state {
+  padding: 1.5rem;
+  background: var(--surface-alt);
+  border-radius: 18px;
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .hero-card,
+  .restaurant-card {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .order-card,
+  .captain-card {
+    grid-template-columns: 1fr;
+  }
+  .order-extra img,
+  .captain-card img {
+    height: 180px;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
