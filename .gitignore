@@ -16,3 +16,19 @@
 local.properties
 .env
 debug.keystore
+
+# Android / Gradle files
+app/
+gradle/
+build.gradle.kts
+settings.gradle.kts
+gradle.properties
+**/AndroidManifest.xml
+**/google-services.json
+**/*.gradle
+**/*.gradle.kts
+**/build/
+**/captures/
+**/.cxx/
+**/.externalNativeBuild/
+**/local.properties
